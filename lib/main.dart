@@ -13,9 +13,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      ),//ThemeData
       home: UserList(),
-    );
+    );//MaterialApp
   }
 }
-
