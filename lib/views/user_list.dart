@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class UserList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const users = {...DUMMY_USERS};
+    final users = {...DUMMY_USERS};
     return Scaffold(
       appBar: AppBar( 
         title: Text('Lista de Usuários'),
