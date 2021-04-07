@@ -10,9 +10,12 @@ class User extends StatelessWidget{
   Widget build(BuildContext context){
     final avatar = user.avatarUrl == null || user.avatarUrl.isEmpty
     ? CircleAvatar(child: Icon(Icons.person))
-    : CircleAvatar(backgroundImage: NetworkImaage(user.avatarURL));
+    : CircleAvatar(backgroundImage: NetworkImage(user.avatarURL));
     return ListTile(
       leading: avatar,
+      title: Text(user.name),
+      trailing: (),
+
     );
   }
 }
